@@ -1,5 +1,38 @@
 class ReportGenerator:
 
+    def create_asphalt_paving_report(self, estimate):
+        return f"""
+
+                ASPHALT PAVING ESTIMATE
+
+        Material:
+        {estimate['material']}
+
+        Paved Area:
+        {estimate['area_sqft']} sq ft
+
+        Compacted Thickness:
+        {estimate['thickness_inches']} in
+
+        Assumed Mix Density:
+        {estimate['mix_density_lb_per_cuft']} lb/cu ft
+
+        Calculated Volume:
+        {estimate['volume_cuft']} cu ft
+
+        Estimated Asphalt:
+        {estimate['estimated_tons']} tons before waste
+
+        Purchase Quantity:
+        {estimate['order_quantity']} {estimate['purchase_unit']}
+
+        Waste:
+        {estimate['waste_percent']}%
+
+        Note:
+        {estimate['note']}
+        """
+
     def create_aggregate_base_report(self, estimate):
         return f"""
 

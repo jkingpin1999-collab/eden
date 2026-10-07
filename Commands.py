@@ -241,6 +241,7 @@ class CommandHandler:
     - estimate shingles
 
     Exterior and Finish Work:
+    - estimate asphalt paving
     - estimate exterior siding
     - estimate housewrap
     - estimate decking
@@ -1260,6 +1261,34 @@ class CommandHandler:
                 "Door specification (press Enter for Interior Door Unit): "
             ) or "Interior Door Unit"
             estimate = self.estimator.interior_doors(quantity, door_spec)
+
+        elif estimate_type == "asphalt paving":
+            dimensions = self.extractor.extract_dimensions(command)
+            area = dimensions["area"]
+            if area is None and dimensions["length"] and dimensions["width"]:
+                area = dimensions["length"] * dimensions["width"]
+            if area is None:
+                area = self.ask_positive_float("Paved area (sq ft): ")
+
+            thickness = dimensions["thickness"]
+            if thickness is None:
+                thickness = self.ask_positive_float(
+                    "Compacted asphalt thickness (inches): "
+                )
+
+            density = self.ask_input(
+                "Hot-mix density in lb/cu ft (press Enter for 145): "
+            )
+            density = float(density) if density else 145
+            estimate = self.estimator.asphalt.paving(
+                area_sqft=area,
+                thickness_inches=thickness,
+                mix_density_lb_per_cuft=density
+            )
+            return self.finish_estimate(
+                estimate,
+                self.reports.create_asphalt_paving_report(estimate)
+            )
 
         else:
             return (

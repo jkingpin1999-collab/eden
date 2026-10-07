@@ -366,6 +366,9 @@ class IntentDetector:
         ]
 
         specialty_aliases = {
+            "asphalt paving": "asphalt paving",
+            "asphalt driveway": "asphalt paving",
+            "asphalt": "asphalt paving",
             "exterior siding": "siding",
             "siding": "siding",
             "house wrap": "housewrap",
