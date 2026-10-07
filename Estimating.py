@@ -18,6 +18,7 @@ from HVAC import HVACEstimator
 
 from Rebar import Rebar
 from SpecialtyEstimates import SpecialtyEstimator
+from Asphalt import AsphaltEstimator
 
 #### ESTIMATOR ####
 
@@ -45,6 +46,7 @@ class Estimator:
 
         self.rebar=Rebar()
         self.specialty=SpecialtyEstimator()
+        self.asphalt=AsphaltEstimator()
 
         self.name="Construction Estimator"
 
