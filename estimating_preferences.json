@@ -1,0 +1,12 @@
+{
+    "concrete_waste_percent": 25.0,
+    "gravel_base_depth_inches": 6.0,
+    "form_board_length_feet": 8.0,
+    "concrete_form_tube_length_feet": 4.0,
+    "lumber_waste_percent": 15.0,
+    "lumber_stud_spacing_inches": 24.0,
+    "lumber_stock_length_feet": 16.0,
+    "roofing_waste_percent": 15.0,
+    "drywall_waste_percent": 15.0,
+    "insulation_waste_percent": 15.0
+}

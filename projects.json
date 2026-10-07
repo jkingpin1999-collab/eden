@@ -1,0 +1,1875 @@
+{
+    "projects": {
+        "apples": {
+            "name": "Apples",
+            "status": "Active",
+            "details": {
+                "customer_name": "Justin Bradly",
+                "customer_email": "justin@gmail.com",
+                "project_address": "",
+                "pricing_region": "Atlanta Metro",
+                "pricing_supplier": "Home Depot online reference (demo)",
+                "material_suppliers": {},
+                "proposal_title": "New Construction",
+                "proposal_notes": "",
+                "proposal_status": "Draft",
+                "proposal_expiration_date": "",
+                "proposal_scope": "",
+                "proposal_exclusions": ""
+            },
+            "bid_settings": {
+                "planned_labor_hours": 0.0,
+                "crew_size": 0,
+                "labor_hours_by_trade": {},
+                "labor_trades": [],
+                "overhead_percent": 0.0,
+                "profit_markup_percent": 0.0
+            },
+            "estimates": [
+                {
+                    "type": "Concrete Slab",
+                    "material": "Ready Mix Concrete",
+                    "build_type": "Standard Slab Package",
+                    "length": 20.0,
+                    "width": 20.0,
+                    "thickness_inches": 6.0,
+                    "thickness_feet": 0.5,
+                    "area_sqft": 400.0,
+                    "perimeter_lf": 80.0,
+                    "cubic_feet": 200.0,
+                    "cubic_yards": 7.41,
+                    "order_quantity": 10,
+                    "waste_percent": 25.0,
+                    "reinforced": true,
+                    "rebar": {
+                        "status": "plan_required",
+                        "source": "approved_structural_plan",
+                        "schedule": null
+                    },
+                    "wire_mesh": true,
+                    "vapor_barrier": true,
+                    "gravel_base": true,
+                    "control_joints": true,
+                    "forms": false,
+                    "material_takeoff": [
+                        {
+                            "item": "Ready Mix Concrete",
+                            "unit": "CY",
+                            "quantity": 10
+                        },
+                        {
+                            "item": "5x10 Wire Mesh Sheets",
+                            "unit": "SHEETS",
+                            "quantity": 10
+                        },
+                        {
+                            "item": "6 mil Vapor Barrier",
+                            "unit": "ROLLS",
+                            "quantity": 1
+                        },
+                        {
+                            "item": "Compacted Aggregate Base (6.0 in depth)",
+                            "unit": "CY",
+                            "quantity": 9.26
+                        }
+                    ]
+                },
+                {
+                    "type": "Roof Sheathing",
+                    "dimensions": {
+                        "length": 20.0,
+                        "width": 8.0
+                    },
+                    "area": 160.0,
+                    "material": {
+                        "size": "4x8",
+                        "type": "7/16 OSB",
+                        "quantity": 6
+                    },
+                    "material_takeoff": [
+                        {
+                            "item": "4x8 7/16 OSB Roof Sheathing",
+                            "unit": "SHEETS",
+                            "quantity": 6
+                        }
+                    ],
+                    "waste_percent": 15.0
+                },
+                {
+                    "type": "Exterior Wall Assembly",
+                    "dimensions": {
+                        "length": 20.0,
+                        "height": 8.0
+                    },
+                    "quantity": 2,
+                    "gross_wall_area_sqft": 320.0,
+                    "stud_spacing_inches": "24.0 in OC",
+                    "include_housewrap": true,
+                    "include_insulation": true,
+                    "include_drywall": true,
+                    "insulation_r_value": "R13",
+                    "waste_percent": 15.0,
+                    "component_estimates": {
+                        "Wall framing and sheathing": {
+                            "type": "Wall Framing Package",
+                            "material": "2x4 SPF Wall Framing",
+                            "details": {
+                                "Wall size": "20.0 ft x 8.0 ft",
+                                "Identical walls": 2,
+                                "Stud spacing": "24.0 in OC",
+                                "Wall sheathing": "Included"
+                            },
+                            "waste_percent": 15.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "2x4 x 8 ft Studs",
+                                    "unit": "EA",
+                                    "quantity": 26
+                                },
+                                {
+                                    "item": "2x4 x 16.0 ft Plates",
+                                    "unit": "EA",
+                                    "quantity": 9
+                                },
+                                {
+                                    "item": "4x8 7/16 OSB Wall Sheathing",
+                                    "unit": "SHEETS",
+                                    "quantity": 12
+                                }
+                            ],
+                            "note": "This package covers field framing and optional wall sheathing. Add openings, headers, hold-downs, and hardware from approved plans as needed."
+                        },
+                        "Housewrap": {
+                            "type": "Housewrap",
+                            "material": "Weather-Resistive Barrier",
+                            "details": {
+                                "Wall area": "320.0 sq ft",
+                                "Roll coverage": "900 sq ft"
+                            },
+                            "waste_percent": 15.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "Housewrap / Weather-Resistive Barrier",
+                                    "unit": "ROLLS",
+                                    "quantity": 1
+                                }
+                            ],
+                            "note": "Flashing tape, cap fasteners, and installation details must follow the selected manufacturer's instructions."
+                        },
+                        "Wall insulation": {
+                            "type": "Batt Insulation",
+                            "material": "R13 Batt Insulation",
+                            "r_value": "R13",
+                            "stud_spacing": 16,
+                            "length": 20.0,
+                            "height": 8.0,
+                            "area": 320.0,
+                            "coverage_per_batt": 7.75,
+                            "batts": 48,
+                            "bundles": 6,
+                            "quantity": 2,
+                            "waste_percent": 15.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "R13 Batt Insulation",
+                                    "unit": "BUNDLES",
+                                    "quantity": 6
+                                }
+                            ]
+                        },
+                        "Interior wall drywall": {
+                            "type": "Wall Drywall",
+                            "material": "1/2 in Drywall",
+                            "length": 20.0,
+                            "height": 8.0,
+                            "area": 320.0,
+                            "sheets": 12,
+                            "quantity": 2,
+                            "waste_percent": 15.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "4x8 1/2 in Drywall Sheets",
+                                    "unit": "SHEETS",
+                                    "quantity": 12
+                                }
+                            ]
+                        }
+                    },
+                    "material_takeoff": [
+                        {
+                            "item": "2x4 x 16.0 ft Plates",
+                            "unit": "EA",
+                            "quantity": 9
+                        },
+                        {
+                            "item": "2x4 x 8 ft Studs",
+                            "unit": "EA",
+                            "quantity": 26
+                        },
+                        {
+                            "item": "4x8 1/2 in Drywall Sheets",
+                            "unit": "SHEETS",
+                            "quantity": 12
+                        },
+                        {
+                            "item": "4x8 7/16 OSB Wall Sheathing",
+                            "unit": "SHEETS",
+                            "quantity": 12
+                        },
+                        {
+                            "item": "Housewrap / Weather-Resistive Barrier",
+                            "unit": "ROLLS",
+                            "quantity": 1
+                        },
+                        {
+                            "item": "R13 Batt Insulation",
+                            "unit": "BUNDLES",
+                            "quantity": 6
+                        }
+                    ],
+                    "assumptions": [
+                        "Straight, repeated wall segments with 2x4 framing.",
+                        "Wall sheathing is included.",
+                        "Wall area is gross area before openings are deducted."
+                    ],
+                    "exclusions": [
+                        "Doors, windows, headers, and opening framing",
+                        "Engineered design, hold-downs, and structural hardware",
+                        "Flashing tape, siding, trim, fasteners, and sealants",
+                        "Electrical, plumbing, labor, permits, and local code review"
+                    ],
+                    "scope_note": "Use Eden's framed-wall-with-openings estimate for walls with doors or windows, then review structural details against approved plans."
+                },
+                {
+                    "type": "Exterior Wall Assembly",
+                    "dimensions": {
+                        "length": 20.0,
+                        "height": 8.0
+                    },
+                    "quantity": 2,
+                    "gross_wall_area_sqft": 320.0,
+                    "net_wall_area_sqft": 246.0,
+                    "stud_spacing_inches": "24.0 in OC",
+                    "openings": [
+                        {
+                            "type": "door",
+                            "width_feet": 3.0,
+                            "height_feet": 7.0
+                        },
+                        {
+                            "type": "window",
+                            "width_feet": 4.0,
+                            "height_feet": 4.0
+                        }
+                    ],
+                    "header_spec": "2x10",
+                    "header_plies": 2,
+                    "include_housewrap": true,
+                    "include_insulation": false,
+                    "include_drywall": true,
+                    "insulation_r_value": null,
+                    "waste_percent": 15.0,
+                    "component_estimates": {
+                        "Wall and opening framing": {
+                            "type": "Framed Wall with Openings",
+                            "dimensions": {
+                                "length": 20.0,
+                                "height": 8.0
+                            },
+                            "quantity": 2,
+                            "stud_spacing_inches": 24.0,
+                            "stud_length": "8 ft",
+                            "openings": [
+                                {
+                                    "type": "door",
+                                    "width_feet": 3.0,
+                                    "height_feet": 7.0
+                                },
+                                {
+                                    "type": "window",
+                                    "width_feet": 4.0,
+                                    "height_feet": 4.0
+                                }
+                            ],
+                            "opening_count_per_wall": 2,
+                            "field_studs_per_wall": 7,
+                            "king_studs_per_wall": 4,
+                            "jack_studs_per_wall": 4,
+                            "studs_to_order": 35,
+                            "plate_linear_feet": 120.0,
+                            "plate_boards": 9,
+                            "header_spec": "2x10",
+                            "header_plies": 2,
+                            "header_material_specified": true,
+                            "header_linear_feet": 41.4,
+                            "gross_wall_area_sqft": 320.0,
+                            "opening_area_sqft": 74.0,
+                            "net_wall_area_sqft": 246.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "2x4 x 8 ft Wall, King, and Jack Studs",
+                                    "unit": "EA",
+                                    "quantity": 35
+                                },
+                                {
+                                    "item": "2x4 x 16.0 ft Top and Bottom Plates",
+                                    "unit": "EA",
+                                    "quantity": 9
+                                },
+                                {
+                                    "item": "Header Material (2 ply 2x10)",
+                                    "unit": "LF",
+                                    "quantity": 41.4
+                                },
+                                {
+                                    "item": "2x4 x 16.0 ft Window Sills",
+                                    "unit": "EA",
+                                    "quantity": 1
+                                }
+                            ],
+                            "waste_percent": 15.0,
+                            "structural_note": "Header size, header plies, cripple studs, and opening layout must follow approved plans."
+                        },
+                        "Wall sheathing": {
+                            "type": "Wall Sheathing",
+                            "area": 246.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "4x8 7/16 OSB Wall Sheathing",
+                                    "unit": "SHEETS",
+                                    "quantity": 9
+                                }
+                            ],
+                            "waste_percent": 15.0
+                        },
+                        "Housewrap": {
+                            "type": "Housewrap",
+                            "material": "Weather-Resistive Barrier",
+                            "details": {
+                                "Wall area": "246.0 sq ft",
+                                "Roll coverage": "900 sq ft"
+                            },
+                            "waste_percent": 15.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "Housewrap / Weather-Resistive Barrier",
+                                    "unit": "ROLLS",
+                                    "quantity": 1
+                                }
+                            ],
+                            "note": "Flashing tape, cap fasteners, and installation details must follow the selected manufacturer's instructions."
+                        },
+                        "Interior wall drywall": {
+                            "type": "Wall Drywall",
+                            "material": "1/2 in Drywall",
+                            "area": 246.0,
+                            "sheets": 9,
+                            "waste_percent": 15.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "4x8 1/2 in Drywall Sheets",
+                                    "unit": "SHEETS",
+                                    "quantity": 9
+                                }
+                            ]
+                        }
+                    },
+                    "material_takeoff": [
+                        {
+                            "item": "2x4 x 16.0 ft Top and Bottom Plates",
+                            "unit": "EA",
+                            "quantity": 9
+                        },
+                        {
+                            "item": "2x4 x 16.0 ft Window Sills",
+                            "unit": "EA",
+                            "quantity": 1
+                        },
+                        {
+                            "item": "2x4 x 8 ft Wall, King, and Jack Studs",
+                            "unit": "EA",
+                            "quantity": 35
+                        },
+                        {
+                            "item": "4x8 1/2 in Drywall Sheets",
+                            "unit": "SHEETS",
+                            "quantity": 9
+                        },
+                        {
+                            "item": "4x8 7/16 OSB Wall Sheathing",
+                            "unit": "SHEETS",
+                            "quantity": 9
+                        },
+                        {
+                            "item": "Header Material (2 ply 2x10)",
+                            "unit": "LF",
+                            "quantity": 41.4
+                        },
+                        {
+                            "item": "Housewrap / Weather-Resistive Barrier",
+                            "unit": "ROLLS",
+                            "quantity": 1
+                        }
+                    ],
+                    "assumptions": [
+                        "Straight, repeated wall segments with 2x4 framing.",
+                        "Wall sheathing is included.",
+                        "Covering materials use net wall area after repeated openings are deducted."
+                    ],
+                    "exclusions": [
+                        "Door and window units, flashing, and installation accessories",
+                        "Engineered design, hold-downs, and structural hardware",
+                        "Flashing tape, siding, trim, fasteners, and sealants",
+                        "Electrical, plumbing, labor, permits, and local code review"
+                    ],
+                    "scope_note": "For this assembly, every identical wall segment uses the same opening layout. Estimate non-repeating walls separately and review structural details against approved plans."
+                },
+                {
+                    "type": "Residential Foundation System Assembly",
+                    "footing_runs": [
+                        {
+                            "length": 80.0,
+                            "width": 1.3333333333333333,
+                            "width_inches": 16.0,
+                            "depth_inches": 8.0,
+                            "quantity": 1,
+                            "cubic_yards": 2.63
+                        }
+                    ],
+                    "footing_run_count": 1,
+                    "footing_cubic_yards": 2.63,
+                    "footing_order_quantity": 4,
+                    "include_foundation_wall": true,
+                    "foundation_wall": {
+                        "length": 80.0,
+                        "height": 8.0,
+                        "thickness_inches": 8.0,
+                        "waterproofing": true
+                    },
+                    "reinforced": true,
+                    "forms": true,
+                    "gravel_base": true,
+                    "waste_percent": 25.0,
+                    "component_estimates": {
+                        "Continuous footing system": {
+                            "type": "Concrete Footing System",
+                            "build_type": "Residential Foundation Footing Package",
+                            "material": "Ready Mix Concrete",
+                            "footing_runs": [
+                                {
+                                    "length": 80.0,
+                                    "width": 1.3333333333333333,
+                                    "width_inches": 16.0,
+                                    "depth_inches": 8.0,
+                                    "quantity": 1,
+                                    "cubic_yards": 2.63
+                                }
+                            ],
+                            "run_count": 1,
+                            "cubic_feet": 71.11,
+                            "cubic_yards": 2.63,
+                            "order_quantity": 4,
+                            "reinforced": true,
+                            "rebar": {
+                                "status": "plan_required",
+                                "source": "approved_structural_plan",
+                                "schedule": null
+                            },
+                            "forms": true,
+                            "gravel_base": true,
+                            "waste_percent": 25.0,
+                            "footing_area_sqft": 106.67,
+                            "form_perimeter_lf": 162.67,
+                            "material_takeoff": [
+                                {
+                                    "item": "Ready Mix Concrete",
+                                    "unit": "CY",
+                                    "quantity": 4
+                                },
+                                {
+                                    "item": "Footing System Form Boards (2x4 x 8.0 ft)",
+                                    "unit": "EA",
+                                    "quantity": 26
+                                },
+                                {
+                                    "item": "Compacted Aggregate Base",
+                                    "unit": "CY",
+                                    "quantity": 2.47,
+                                    "base_depth_inches": 6.0,
+                                    "cubic_yards": 2.47,
+                                    "estimated_tons": 3.46
+                                }
+                            ],
+                            "structural_note": "Footing size, reinforcing, stepped elevations, and bearing requirements must match approved structural plans."
+                        },
+                        "Foundation wall": {
+                            "type": "Concrete Foundation Wall",
+                            "build_type": "Residential Foundation Wall Package",
+                            "material": "Ready Mix Concrete",
+                            "length": 80.0,
+                            "height": 8.0,
+                            "thickness_inches": 8.0,
+                            "thickness_feet": 0.67,
+                            "cubic_feet": 426.67,
+                            "cubic_yards": 15.8,
+                            "order_quantity": 20,
+                            "reinforced": true,
+                            "rebar": {
+                                "status": "plan_required",
+                                "source": "approved_structural_plan",
+                                "schedule": null
+                            },
+                            "forms": true,
+                            "waterproofing": true,
+                            "waste_percent": 25.0,
+                            "wall_area_sqft": 640.0,
+                            "form_contact_area_sqft": 1280.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "Ready Mix Concrete",
+                                    "unit": "CY",
+                                    "quantity": 20
+                                },
+                                {
+                                    "item": "4x8 Foundation Wall Form Panels",
+                                    "unit": "EA",
+                                    "quantity": 50
+                                },
+                                {
+                                    "item": "Foundation Waterproofing (5 gal pail)",
+                                    "unit": "PAILS",
+                                    "quantity": 8
+                                }
+                            ]
+                        }
+                    },
+                    "material_takeoff": [
+                        {
+                            "item": "4x8 Foundation Wall Form Panels",
+                            "unit": "EA",
+                            "quantity": 50
+                        },
+                        {
+                            "item": "Compacted Aggregate Base",
+                            "unit": "CY",
+                            "quantity": 2.47
+                        },
+                        {
+                            "item": "Footing System Form Boards (2x4 x 8.0 ft)",
+                            "unit": "EA",
+                            "quantity": 26
+                        },
+                        {
+                            "item": "Foundation Waterproofing (5 gal pail)",
+                            "unit": "PAILS",
+                            "quantity": 8
+                        },
+                        {
+                            "item": "Ready Mix Concrete",
+                            "unit": "CY",
+                            "quantity": 24
+                        }
+                    ],
+                    "assumptions": [
+                        "Footing runs are measured continuous runs before waste.",
+                        "Footing concrete is rounded once for the entire footing system.",
+                        "Foundation-wall concrete is a separate pour and is shown as a separate component."
+                    ],
+                    "exclusions": [
+                        "Excavation, haul-off, dewatering, soil correction, and backfill",
+                        "Drain tile, stone, sump equipment, and drainage design",
+                        "Rebar quantities, engineering, stepped elevations, and bearing design",
+                        "Labor, permits, inspections, and local code review"
+                    ],
+                    "scope_note": "Footing sizes, reinforcing, elevations, foundation-wall layout, waterproofing system, and site drainage must match approved plans and site conditions."
+                },
+                {
+                    "type": "Residential Roof Covering Assembly",
+                    "dimensions": {
+                        "length": 30.0,
+                        "width": 20.0
+                    },
+                    "roof_type": "gable",
+                    "pitch_rise": 6.0,
+                    "overhang_inches": 12.0,
+                    "roof_area_sqft": 787.1,
+                    "roof_length_feet": 32.0,
+                    "rafter_length_feet": 12.3,
+                    "drip_edge_length_feet": 113.2,
+                    "include_drip_edge": true,
+                    "include_ridge_vent": true,
+                    "ice_water_coverage_sqft": 192.0,
+                    "flashing_quantity": 2,
+                    "waste_percent": 15.0,
+                    "component_estimates": {
+                        "Roof sheathing": {
+                            "type": "Roof Sheathing",
+                            "dimensions": {
+                                "length": 30.0,
+                                "width": 20.0
+                            },
+                            "roof_type": "gable",
+                            "pitch_rise": 6.0,
+                            "overhang_inches": 12.0,
+                            "roof_plane_count": 2,
+                            "roof_length": 32.0,
+                            "rafter_length": 12.3,
+                            "roof_plane_area": 393.55,
+                            "area": 787.1,
+                            "material": {
+                                "size": "4x8",
+                                "type": "7/16 OSB",
+                                "quantity": 29
+                            },
+                            "material_takeoff": [
+                                {
+                                    "item": "4x8 7/16 OSB Roof Sheathing",
+                                    "unit": "SHEETS",
+                                    "quantity": 29
+                                }
+                            ],
+                            "waste_percent": 15.0
+                        },
+                        "Roof shingles": {
+                            "type": "Asphalt Shingles",
+                            "dimensions": {
+                                "length": 30.0,
+                                "width": 20.0
+                            },
+                            "roof_type": "gable",
+                            "pitch_rise": 6.0,
+                            "overhang_inches": 12.0,
+                            "roof_plane_count": 2,
+                            "roof_length": 32.0,
+                            "rafter_length": 12.3,
+                            "roof_plane_area": 393.55,
+                            "area": 787.1,
+                            "squares": 10,
+                            "shingles": {
+                                "bundles": 30
+                            },
+                            "material_takeoff": [
+                                {
+                                    "item": "Asphalt Shingles (3 bundles per square)",
+                                    "unit": "BUNDLES",
+                                    "quantity": 30
+                                }
+                            ],
+                            "waste_percent": 15.0
+                        },
+                        "Roof underlayment": {
+                            "type": "Roof Underlayment",
+                            "dimensions": {
+                                "length": 30.0,
+                                "width": 20.0
+                            },
+                            "roof_type": "gable",
+                            "pitch_rise": 6.0,
+                            "overhang_inches": 12.0,
+                            "roof_plane_count": 2,
+                            "roof_length": 32.0,
+                            "rafter_length": 12.3,
+                            "roof_plane_area": 393.55,
+                            "area": 787.1,
+                            "material": {
+                                "type": "Synthetic Underlayment",
+                                "rolls": 1
+                            },
+                            "material_takeoff": [
+                                {
+                                    "item": "Synthetic Roof Underlayment",
+                                    "unit": "ROLLS",
+                                    "quantity": 1
+                                }
+                            ],
+                            "waste_percent": 15.0
+                        },
+                        "Drip edge": {
+                            "type": "Roof Drip Edge",
+                            "required_length": 113.2,
+                            "total_length": 131,
+                            "material": {
+                                "size": "10 ft",
+                                "quantity": 14
+                            },
+                            "waste_percent": 15.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "10 ft Roof Drip Edge",
+                                    "unit": "EA",
+                                    "quantity": 14
+                                }
+                            ]
+                        },
+                        "Ridge vent": {
+                            "type": "Ridge Vent",
+                            "length": 32.0,
+                            "material": {
+                                "size": "10 ft",
+                                "quantity": 4
+                            },
+                            "material_takeoff": [
+                                {
+                                    "item": "10 ft Ridge Vent",
+                                    "unit": "EA",
+                                    "quantity": 4
+                                }
+                            ],
+                            "waste_percent": 15.0
+                        },
+                        "Ice and water shield": {
+                            "type": "Ice & Water Shield",
+                            "required_coverage_sqft": 192.0,
+                            "area_with_waste": 220.8,
+                            "material": {
+                                "rolls": 2,
+                                "type": "Self-Adhered Ice Barrier"
+                            },
+                            "waste_percent": 15.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "Self-Adhered Ice & Water Shield",
+                                    "unit": "ROLLS",
+                                    "quantity": 2
+                                }
+                            ]
+                        },
+                        "Roof flashing": {
+                            "type": "Roof Flashing",
+                            "locations": 2,
+                            "material": {
+                                "quantity": 3,
+                                "type": "Flashing Pieces"
+                            },
+                            "material_takeoff": [
+                                {
+                                    "item": "Roof Flashing Pieces",
+                                    "unit": "EA",
+                                    "quantity": 3
+                                }
+                            ],
+                            "waste_percent": 15.0
+                        }
+                    },
+                    "material_takeoff": [
+                        {
+                            "item": "10 ft Ridge Vent",
+                            "unit": "EA",
+                            "quantity": 4
+                        },
+                        {
+                            "item": "10 ft Roof Drip Edge",
+                            "unit": "EA",
+                            "quantity": 14
+                        },
+                        {
+                            "item": "4x8 7/16 OSB Roof Sheathing",
+                            "unit": "SHEETS",
+                            "quantity": 29
+                        },
+                        {
+                            "item": "Asphalt Shingles (3 bundles per square)",
+                            "unit": "BUNDLES",
+                            "quantity": 30
+                        },
+                        {
+                            "item": "Roof Flashing Pieces",
+                            "unit": "EA",
+                            "quantity": 3
+                        },
+                        {
+                            "item": "Self-Adhered Ice & Water Shield",
+                            "unit": "ROLLS",
+                            "quantity": 2
+                        },
+                        {
+                            "item": "Synthetic Roof Underlayment",
+                            "unit": "ROLLS",
+                            "quantity": 1
+                        }
+                    ],
+                    "assumptions": [
+                        "Roof coverage uses the entered pitch and overhangs.",
+                        "Drip edge follows the calculated roof perimeter.",
+                        "Ice-and-water coverage is measured from plans or local requirements."
+                    ],
+                    "exclusions": [
+                        "Trusses, rafters, blocking, framing connections, and structural design",
+                        "Valleys, hips, dormers, skylights, penetrations, and complex flashing unless entered",
+                        "Roof removal, decking repairs, labor, permits, and local code review"
+                    ],
+                    "scope_note": "This is a roof-covering assembly for simple gable or shed geometry. Verify roof planes, valleys, penetrations, ventilation, and manufacturer installation requirements against approved plans."
+                },
+                {
+                    "type": "Residential Floor System Assembly",
+                    "dimensions": {
+                        "length": 30.0,
+                        "width": 20.0
+                    },
+                    "floor_area_sqft": 600.0,
+                    "joist_spec": {
+                        "size": "2x10",
+                        "member_length_feet": 30.0,
+                        "spacing_inches": 16.0
+                    },
+                    "rim_spec": {
+                        "size": "2x10",
+                        "stock_length_feet": 16.0
+                    },
+                    "include_blocking": true,
+                    "blocking_rows": 1,
+                    "waste_percent": 15.0,
+                    "component_estimates": {
+                        "Floor joists": {
+                            "type": "Floor Joists",
+                            "dimensions": {
+                                "length": 30.0,
+                                "width": 20.0
+                            },
+                            "spacing": 16.0,
+                            "joists": {
+                                "size": "2x10",
+                                "length": "30.0 ft",
+                                "quantity": 19
+                            },
+                            "status": "specified",
+                            "waste_percent": 15.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "2x10 x 30.0 ft Floor Joists",
+                                    "unit": "EA",
+                                    "quantity": 19
+                                }
+                            ]
+                        },
+                        "Rim joists": {
+                            "type": "Rim Joists",
+                            "dimensions": {
+                                "length": 30.0,
+                                "width": 20.0
+                            },
+                            "perimeter": 100.0,
+                            "rim_joists": {
+                                "size": "2x10",
+                                "length": "16.0 ft",
+                                "quantity": 8
+                            },
+                            "status": "specified",
+                            "waste_percent": 15.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "2x10 Rim Joists",
+                                    "unit": "EA",
+                                    "quantity": 8
+                                }
+                            ]
+                        },
+                        "Subfloor sheathing": {
+                            "type": "Subfloor Sheathing",
+                            "dimensions": {
+                                "length": 30.0,
+                                "width": 20.0
+                            },
+                            "area": 600.0,
+                            "material": {
+                                "size": "4x8",
+                                "thickness": "3/4",
+                                "type": "T&G OSB",
+                                "quantity": 22
+                            },
+                            "material_takeoff": [
+                                {
+                                    "item": "4x8 3/4 in T&G OSB Subfloor",
+                                    "unit": "SHEETS",
+                                    "quantity": 22
+                                }
+                            ],
+                            "waste_percent": 15.0
+                        },
+                        "Joist blocking": {
+                            "type": "Blocking",
+                            "wall_length": 20.0,
+                            "rows": 1,
+                            "blocking": {
+                                "size": "2x10",
+                                "length": "14.5 inches",
+                                "quantity": 18
+                            },
+                            "spacing": 16.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "2x10 x 14.5 in Blocking",
+                                    "unit": "EA",
+                                    "quantity": 18
+                                }
+                            ],
+                            "waste_percent": 15.0
+                        }
+                    },
+                    "material_takeoff": [
+                        {
+                            "item": "2x10 Rim Joists",
+                            "unit": "EA",
+                            "quantity": 8
+                        },
+                        {
+                            "item": "2x10 x 14.5 in Blocking",
+                            "unit": "EA",
+                            "quantity": 18
+                        },
+                        {
+                            "item": "2x10 x 30.0 ft Floor Joists",
+                            "unit": "EA",
+                            "quantity": 19
+                        },
+                        {
+                            "item": "4x8 3/4 in T&G OSB Subfloor",
+                            "unit": "SHEETS",
+                            "quantity": 22
+                        }
+                    ],
+                    "assumptions": [
+                        "Joist size, member length, and spacing come from the approved framing plan.",
+                        "Rim material and stock length come from the approved framing plan.",
+                        "Subfloor uses 4x8 3/4 in T&G OSB coverage with the selected waste allowance."
+                    ],
+                    "exclusions": [
+                        "Beams, girders, posts, hangers, straps, adhesives, fasteners, and bridging unless separately estimated",
+                        "Bearing verification, point loads, openings, stair framing, and structural design",
+                        "Labor, permits, inspections, and local code review"
+                    ],
+                    "scope_note": "Do not use this assembly to select structural members. Joist layout, rim detail, blocking, beams, connections, and openings must match approved framing plans."
+                },
+                {
+                    "type": "Interior Finish Assembly",
+                    "net_wall_area_sqft": 1000.0,
+                    "ceiling_area_sqft": 600.0,
+                    "drywall_finish_area_sqft": 1600.0,
+                    "include_insulation": true,
+                    "insulation_r_value": "R13",
+                    "include_drywall": true,
+                    "include_primer_and_paint": true,
+                    "flooring_area_sqft": 600.0,
+                    "flooring_type": "lvp",
+                    "baseboard_linear_feet": 280.0,
+                    "interior_door_quantity": 8,
+                    "component_estimates": {
+                        "Wall insulation": {
+                            "type": "Batt Insulation",
+                            "material": "R13 Batt Insulation",
+                            "r_value": "R13",
+                            "area": 1000.0,
+                            "batts": 149,
+                            "bundles": 19,
+                            "waste_percent": 15.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "R13 Batt Insulation",
+                                    "unit": "BUNDLES",
+                                    "quantity": 19
+                                }
+                            ]
+                        },
+                        "Wall drywall": {
+                            "type": "Wall Drywall",
+                            "material": "1/2 in Drywall",
+                            "area": 1000.0,
+                            "sheets": 36,
+                            "waste_percent": 15.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "4x8 1/2 in Drywall Sheets",
+                                    "unit": "SHEETS",
+                                    "quantity": 36
+                                }
+                            ]
+                        },
+                        "Ceiling drywall": {
+                            "type": "Ceiling Drywall",
+                            "material": "1/2 in Drywall",
+                            "area": 600.0,
+                            "sheets": 22,
+                            "waste_percent": 15.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "4x8 1/2 in Ceiling Drywall Sheets",
+                                    "unit": "SHEETS",
+                                    "quantity": 22
+                                }
+                            ]
+                        },
+                        "Joint compound": {
+                            "type": "Joint Compound",
+                            "material": "Drywall Joint Compound",
+                            "area": 1600.0,
+                            "coverage_per_bucket": 450,
+                            "buckets": 4,
+                            "waste_percent": 10,
+                            "material_takeoff": [
+                                {
+                                    "item": "Drywall Joint Compound (5 gal bucket)",
+                                    "unit": "BUCKETS",
+                                    "quantity": 4
+                                }
+                            ]
+                        },
+                        "Drywall tape": {
+                            "type": "Drywall Tape",
+                            "material": "Paper Drywall Tape",
+                            "area": 1600.0,
+                            "coverage_per_roll": 500,
+                            "rolls": 4,
+                            "waste_percent": 10,
+                            "material_takeoff": [
+                                {
+                                    "item": "Paper Drywall Tape",
+                                    "unit": "ROLLS",
+                                    "quantity": 4
+                                }
+                            ]
+                        },
+                        "Drywall screws": {
+                            "type": "Drywall Screws",
+                            "material": "1-5/8 inch Drywall Screws",
+                            "area": 1600.0,
+                            "sheets": 50,
+                            "screws_per_sheet": 32,
+                            "screws": 1761,
+                            "screws_per_box": 1000,
+                            "boxes": 2,
+                            "waste_percent": 10,
+                            "material_takeoff": [
+                                {
+                                    "item": "1-5/8 in Drywall Screws (1000-count box)",
+                                    "unit": "BOXES",
+                                    "quantity": 2
+                                }
+                            ]
+                        },
+                        "Drywall sanding": {
+                            "type": "Drywall Sanding",
+                            "material": "Drywall Sanding Sheets",
+                            "area": 1600.0,
+                            "coverage_per_pack": 200,
+                            "packs": 9,
+                            "waste_percent": 10,
+                            "material_takeoff": [
+                                {
+                                    "item": "Drywall Sanding Sheets",
+                                    "unit": "PACKS",
+                                    "quantity": 9
+                                }
+                            ]
+                        },
+                        "Drywall primer": {
+                            "type": "Drywall Primer",
+                            "material": "PVA Drywall Primer",
+                            "area": 1600.0,
+                            "coats": 1,
+                            "coverage_per_gallon": 400,
+                            "gallons": 5,
+                            "waste_percent": 10,
+                            "material_takeoff": [
+                                {
+                                    "item": "PVA Drywall Primer",
+                                    "unit": "GALLONS",
+                                    "quantity": 5
+                                }
+                            ]
+                        },
+                        "Interior wall paint": {
+                            "type": "Interior Paint",
+                            "material": "Latex Interior Wall Paint",
+                            "area": 1000.0,
+                            "coats": 2,
+                            "coverage_per_gallon": 350,
+                            "gallons": 7,
+                            "waste_percent": 10,
+                            "material_takeoff": [
+                                {
+                                    "item": "Latex Interior Wall Paint",
+                                    "unit": "GALLONS",
+                                    "quantity": 7
+                                }
+                            ]
+                        },
+                        "Ceiling paint": {
+                            "type": "Ceiling Paint",
+                            "material": "Flat White Ceiling Paint",
+                            "area": 600.0,
+                            "coats": 2,
+                            "coverage_per_gallon": 350,
+                            "gallons": 4,
+                            "waste_percent": 10,
+                            "material_takeoff": [
+                                {
+                                    "item": "Flat White Ceiling Paint",
+                                    "unit": "GALLONS",
+                                    "quantity": 4
+                                }
+                            ]
+                        },
+                        "Flooring": {
+                            "type": "Flooring",
+                            "material": "lvp",
+                            "details": {
+                                "Floor area": "600.0 sq ft",
+                                "Carton coverage": "20.0 sq ft"
+                            },
+                            "waste_percent": 15.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "lvp",
+                                    "unit": "CARTONS",
+                                    "quantity": 35
+                                }
+                            ],
+                            "note": "Verify carton coverage, underlayment, transitions, moisture requirements, and manufacturer installation instructions."
+                        },
+                        "Baseboard": {
+                            "type": "Baseboard Trim",
+                            "material": "Baseboard Trim",
+                            "details": {
+                                "Baseboard length": "280.0 LF",
+                                "Stock length": "16 ft"
+                            },
+                            "waste_percent": 15.0,
+                            "material_takeoff": [
+                                {
+                                    "item": "Baseboard Trim (16 ft)",
+                                    "unit": "EA",
+                                    "quantity": 21
+                                }
+                            ],
+                            "note": "Measure returns, closets, and transitions. Nails, caulk, and paint are not included."
+                        },
+                        "Interior doors": {
+                            "type": "Interior Doors",
+                            "material": "30 in prehung int",
+                            "details": {
+                                "Quantity": 8,
+                                "Specification": "30 in prehung int"
+                            },
+                            "waste_percent": 0,
+                            "material_takeoff": [
+                                {
+                                    "item": "30 in prehung int",
+                                    "unit": "EA",
+                                    "quantity": 8
+                                }
+                            ],
+                            "note": "Verify handing, swing, size, jamb depth, hardware, and finish from the door schedule."
+                        }
+                    },
+                    "material_takeoff": [
+                        {
+                            "item": "1-5/8 in Drywall Screws (1000-count box)",
+                            "unit": "BOXES",
+                            "quantity": 2
+                        },
+                        {
+                            "item": "30 in prehung int",
+                            "unit": "EA",
+                            "quantity": 8
+                        },
+                        {
+                            "item": "4x8 1/2 in Ceiling Drywall Sheets",
+                            "unit": "SHEETS",
+                            "quantity": 22
+                        },
+                        {
+                            "item": "4x8 1/2 in Drywall Sheets",
+                            "unit": "SHEETS",
+                            "quantity": 36
+                        },
+                        {
+                            "item": "Baseboard Trim (16 ft)",
+                            "unit": "EA",
+                            "quantity": 21
+                        },
+                        {
+                            "item": "Drywall Joint Compound (5 gal bucket)",
+                            "unit": "BUCKETS",
+                            "quantity": 4
+                        },
+                        {
+                            "item": "Drywall Sanding Sheets",
+                            "unit": "PACKS",
+                            "quantity": 9
+                        },
+                        {
+                            "item": "Flat White Ceiling Paint",
+                            "unit": "GALLONS",
+                            "quantity": 4
+                        },
+                        {
+                            "item": "Latex Interior Wall Paint",
+                            "unit": "GALLONS",
+                            "quantity": 7
+                        },
+                        {
+                            "item": "PVA Drywall Primer",
+                            "unit": "GALLONS",
+                            "quantity": 5
+                        },
+                        {
+                            "item": "Paper Drywall Tape",
+                            "unit": "ROLLS",
+                            "quantity": 4
+                        },
+                        {
+                            "item": "R13 Batt Insulation",
+                            "unit": "BUNDLES",
+                            "quantity": 19
+                        },
+                        {
+                            "item": "lvp",
+                            "unit": "CARTONS",
+                            "quantity": 35
+                        }
+                    ],
+                    "assumptions": [
+                        "Wall and ceiling areas are net measured coverage areas from plans.",
+                        "Drywall finish and primer use combined measured wall and ceiling area; wall and ceiling paint are calculated separately.",
+                        "Flooring carton coverage and door specifications must match the selected products."
+                    ],
+                    "exclusions": [
+                        "Drywall texture, corner bead, trim profiles, hardware, transitions, and underlayment unless separately estimated",
+                        "Cabinets, countertops, tile, showers, appliances, labor, and permits",
+                        "Moisture conditions, substrate repairs, and manufacturer installation requirements"
+                    ],
+                    "scope_note": "Verify room-by-room areas, ceiling heights, wet-area materials, door schedule, finish selections, and product coverage before ordering."
+                },
+                {
+                    "type": "Concrete Slab",
+                    "material": "Ready Mix Concrete",
+                    "build_type": "Standard Slab Package",
+                    "length": 20.0,
+                    "width": 20.0,
+                    "thickness_inches": 6.0,
+                    "thickness_feet": 0.5,
+                    "area_sqft": 400.0,
+                    "perimeter_lf": 80.0,
+                    "cubic_feet": 200.0,
+                    "cubic_yards": 7.41,
+                    "order_quantity": 10,
+                    "waste_percent": 25.0,
+                    "reinforced": true,
+                    "rebar": {
+                        "status": "plan_required",
+                        "source": "approved_structural_plan",
+                        "schedule": null
+                    },
+                    "wire_mesh": true,
+                    "vapor_barrier": true,
+                    "gravel_base": true,
+                    "control_joints": true,
+                    "forms": false,
+                    "material_takeoff": [
+                        {
+                            "item": "Ready Mix Concrete",
+                            "unit": "CY",
+                            "quantity": 10
+                        },
+                        {
+                            "item": "5x10 Wire Mesh Sheets",
+                            "unit": "SHEETS",
+                            "quantity": 10
+                        },
+                        {
+                            "item": "6 mil Vapor Barrier",
+                            "unit": "ROLLS",
+                            "quantity": 1
+                        },
+                        {
+                            "item": "Compacted Aggregate Base",
+                            "unit": "CY",
+                            "quantity": 9.26,
+                            "base_depth_inches": 6.0,
+                            "cubic_yards": 9.26,
+                            "estimated_tons": 12.96
+                        }
+                    ]
+                }
+            ],
+            "custom_items": [],
+            "change_orders": [],
+            "phases": [],
+            "schedule_items": [],
+            "equipment": [],
+            "daily_logs": []
+        },
+        "maple street backyard workshop": {
+            "name": "Maple Street Backyard Workshop",
+            "status": "Active",
+            "details": {
+                "customer_name": "Daniel Brooks",
+                "customer_email": "dbrooks@gmail.com",
+                "project_address": "1842 Maple Street, Marietta, GA",
+                "pricing_region": "Atlanta Metro",
+                "pricing_supplier": "Home Depot online reference (demo)",
+                "material_suppliers": {},
+                "proposal_title": "Maple Street Backyard Workshop \u2013 Construction Proposal",
+                "proposal_notes": "This proposal covers the estimated materials and planned labor for a detached 20 ft \u00d7 24 ft backyard workshop at 1842 Maple Street, Marietta, Georgia.\n\nScope includes site preparation, concrete footing/slab work, framing, roof sheathing, asphalt shingles, wall insulation, drywall, and interior paint as shown in the estimate.\n\nFinal layout, header sizing, structural connections, permits, electrical work, plumbing, HVAC, utility connections, grading beyond the immediate work area, and any plan-required engineering are excluded unless specifically added in writing.\n\nMaterial pricing is based on supplier pricing available when this proposal was prepared and may change if work is not authorized promptly. Any work outside this scope requires written approval through a change order.\n\nThank you for the opportunity to provide this proposal.",
+                "proposal_status": "Draft",
+                "proposal_expiration_date": "",
+                "proposal_scope": "",
+                "proposal_exclusions": ""
+            },
+            "bid_settings": {
+                "planned_labor_hours": 270.0,
+                "crew_size": 0,
+                "labor_hours_by_trade": {},
+                "labor_trades": [
+                    {
+                        "trade": "Project Manager",
+                        "labor_hours": 6.0,
+                        "hourly_rate": 65.0
+                    },
+                    {
+                        "trade": "Finish Carpenter",
+                        "labor_hours": 48.0,
+                        "hourly_rate": 0.0
+                    },
+                    {
+                        "trade": "Laborer",
+                        "labor_hours": 16.0,
+                        "hourly_rate": 35.0
+                    },
+                    {
+                        "trade": "Concrete Finisher",
+                        "labor_hours": 40.0,
+                        "hourly_rate": 50.0
+                    },
+                    {
+                        "trade": "Carpenter",
+                        "labor_hours": 72.0,
+                        "hourly_rate": 55.0
+                    },
+                    {
+                        "trade": "Roofer",
+                        "labor_hours": 32.0,
+                        "hourly_rate": 48.0
+                    },
+                    {
+                        "trade": "Finish Carpenters",
+                        "labor_hours": 48.0,
+                        "hourly_rate": 52.0
+                    },
+                    {
+                        "trade": "laborer",
+                        "labor_hours": 8.0,
+                        "hourly_rate": 35.0
+                    }
+                ],
+                "overhead_percent": 10.0,
+                "profit_markup_percent": 20.0
+            },
+            "estimates": [
+                {
+                    "type": "Concrete Slab",
+                    "material": "Ready Mix Concrete",
+                    "build_type": "Standard Slab Package",
+                    "length": 20.0,
+                    "width": 24.0,
+                    "thickness_inches": 4.0,
+                    "thickness_feet": 0.33,
+                    "area_sqft": 480.0,
+                    "perimeter_lf": 88.0,
+                    "cubic_feet": 160.0,
+                    "cubic_yards": 5.93,
+                    "order_quantity": 8,
+                    "waste_percent": 25.0,
+                    "reinforced": true,
+                    "rebar": {
+                        "status": "plan_required",
+                        "source": "approved_structural_plan",
+                        "schedule": null
+                    },
+                    "wire_mesh": true,
+                    "vapor_barrier": true,
+                    "gravel_base": true,
+                    "control_joints": true,
+                    "forms": false,
+                    "material_takeoff": [
+                        {
+                            "item": "Ready Mix Concrete",
+                            "unit": "CY",
+                            "quantity": 8
+                        },
+                        {
+                            "item": "5x10 Wire Mesh Sheets",
+                            "unit": "SHEETS",
+                            "quantity": 12
+                        },
+                        {
+                            "item": "6 mil Vapor Barrier",
+                            "unit": "ROLLS",
+                            "quantity": 1
+                        },
+                        {
+                            "item": "Compacted Aggregate Base (6.0 in depth)",
+                            "unit": "CY",
+                            "quantity": 11.11
+                        }
+                    ]
+                },
+                {
+                    "type": "Framed Wall with Openings",
+                    "dimensions": {
+                        "length": 20.0,
+                        "height": 8.0
+                    },
+                    "quantity": 1,
+                    "stud_spacing_inches": 24.0,
+                    "stud_length": "8 ft",
+                    "openings": [
+                        {
+                            "type": "door",
+                            "width_feet": 3.0,
+                            "height_feet": 7.0
+                        },
+                        {
+                            "type": "window",
+                            "width_feet": 3.0,
+                            "height_feet": 3.0
+                        }
+                    ],
+                    "opening_count_per_wall": 2,
+                    "field_studs_per_wall": 7,
+                    "king_studs_per_wall": 4,
+                    "jack_studs_per_wall": 4,
+                    "studs_to_order": 18,
+                    "plate_linear_feet": 60.0,
+                    "plate_boards": 5,
+                    "header_spec": "Per approved structural plan",
+                    "header_plies": null,
+                    "header_material_specified": false,
+                    "header_linear_feet": null,
+                    "gross_wall_area_sqft": 160.0,
+                    "opening_area_sqft": 30.0,
+                    "net_wall_area_sqft": 130.0,
+                    "material_takeoff": [
+                        {
+                            "item": "2x4 x 8 ft Wall, King, and Jack Studs",
+                            "unit": "EA",
+                            "quantity": 18
+                        },
+                        {
+                            "item": "2x4 x 16.0 ft Top and Bottom Plates",
+                            "unit": "EA",
+                            "quantity": 5
+                        },
+                        {
+                            "item": "2x4 x 16.0 ft Window Sills",
+                            "unit": "EA",
+                            "quantity": 1
+                        }
+                    ],
+                    "waste_percent": 15.0,
+                    "structural_note": "Header size, header plies, cripple studs, and opening layout must follow approved plans."
+                },
+                {
+                    "type": "Framed Wall",
+                    "dimensions": {
+                        "length": 20.0,
+                        "height": 8.0
+                    },
+                    "stud_spacing_inches": 24.0,
+                    "stud_count": 11,
+                    "studs": {
+                        "size": "2x4",
+                        "length": "8 ft",
+                        "quantity": 13
+                    },
+                    "plate_linear_feet": 60.0,
+                    "plates": {
+                        "size": "2x4",
+                        "length": "16.0 ft",
+                        "quantity": 5
+                    },
+                    "wall_area_sqft": 160.0,
+                    "material_takeoff": [
+                        {
+                            "item": "2x4 x 8 ft Studs",
+                            "unit": "EA",
+                            "quantity": 13
+                        },
+                        {
+                            "item": "2x4 x 16.0 ft Plates",
+                            "unit": "EA",
+                            "quantity": 5
+                        }
+                    ],
+                    "quantity": 1,
+                    "waste_percent": 15.0
+                },
+                {
+                    "type": "Framed Wall",
+                    "dimensions": {
+                        "length": 24.0,
+                        "height": 8.0
+                    },
+                    "stud_spacing_inches": 24.0,
+                    "stud_count": 26,
+                    "studs": {
+                        "size": "2x4",
+                        "length": "8 ft",
+                        "quantity": 30
+                    },
+                    "plate_linear_feet": 144.0,
+                    "plates": {
+                        "size": "2x4",
+                        "length": "16.0 ft",
+                        "quantity": 11
+                    },
+                    "wall_area_sqft": 384.0,
+                    "material_takeoff": [
+                        {
+                            "item": "2x4 x 8 ft Studs",
+                            "unit": "EA",
+                            "quantity": 30
+                        },
+                        {
+                            "item": "2x4 x 16.0 ft Plates",
+                            "unit": "EA",
+                            "quantity": 11
+                        }
+                    ],
+                    "quantity": 2,
+                    "waste_percent": 15.0
+                },
+                {
+                    "type": "Roof Sheathing",
+                    "dimensions": {
+                        "length": 20.0,
+                        "width": 8.0
+                    },
+                    "area": 160.0,
+                    "material": {
+                        "size": "4x8",
+                        "type": "7/16 OSB",
+                        "quantity": 6
+                    },
+                    "material_takeoff": [
+                        {
+                            "item": "4x8 7/16 OSB Roof Sheathing",
+                            "unit": "SHEETS",
+                            "quantity": 6
+                        }
+                    ],
+                    "waste_percent": 15.0
+                },
+                {
+                    "type": "Asphalt Shingles",
+                    "dimensions": {
+                        "length": 26.0,
+                        "width": 24.0
+                    },
+                    "area": 624.0,
+                    "squares": 8,
+                    "shingles": {
+                        "bundles": 24
+                    },
+                    "material_takeoff": [
+                        {
+                            "item": "Asphalt Shingles (3 bundles per square)",
+                            "unit": "BUNDLES",
+                            "quantity": 24
+                        }
+                    ],
+                    "waste_percent": 15.0
+                },
+                {
+                    "type": "Batt Insulation",
+                    "material": "R13 Batt Insulation",
+                    "r_value": "R13",
+                    "stud_spacing": 16.0,
+                    "length": 20.0,
+                    "height": 8.0,
+                    "area": 640.0,
+                    "coverage_per_batt": 7.75,
+                    "batts": 95,
+                    "bundles": 12,
+                    "quantity": 4,
+                    "waste_percent": 15.0,
+                    "material_takeoff": [
+                        {
+                            "item": "R13 Batt Insulation",
+                            "unit": "BUNDLES",
+                            "quantity": 12
+                        }
+                    ]
+                },
+                {
+                    "type": "Wall Drywall",
+                    "material": "1/2 in Drywall",
+                    "length": 20.0,
+                    "height": 8.0,
+                    "area": 640.0,
+                    "sheets": 23,
+                    "quantity": 4,
+                    "waste_percent": 15.0,
+                    "material_takeoff": [
+                        {
+                            "item": "4x8 1/2 in Drywall Sheets",
+                            "unit": "SHEETS",
+                            "quantity": 23
+                        }
+                    ]
+                },
+                {
+                    "type": "Interior Paint",
+                    "material": "Latex Interior Wall Paint",
+                    "area": 704.0,
+                    "coats": 2,
+                    "coverage_per_gallon": 350,
+                    "gallons": 5,
+                    "waste_percent": 10,
+                    "material_takeoff": [
+                        {
+                            "item": "Latex Interior Wall Paint",
+                            "unit": "GALLONS",
+                            "quantity": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "Concrete Footing System",
+                    "build_type": "Continuous Footing System",
+                    "material": "Ready Mix Concrete",
+                    "footing_runs": [
+                        {
+                            "length": 20.0,
+                            "width": 1.3333333333333333,
+                            "depth_inches": 12.0,
+                            "quantity": 2,
+                            "cubic_yards": 1.98
+                        },
+                        {
+                            "length": 24.0,
+                            "width": 1.3333333333333333,
+                            "depth_inches": 12.0,
+                            "quantity": 2,
+                            "cubic_yards": 2.37
+                        }
+                    ],
+                    "run_count": 4,
+                    "cubic_feet": 117.33,
+                    "cubic_yards": 4.35,
+                    "order_quantity": 6,
+                    "reinforced": false,
+                    "rebar": null,
+                    "forms": true,
+                    "gravel_base": true,
+                    "waste_percent": 25.0,
+                    "footing_area_sqft": 117.33,
+                    "form_perimeter_lf": 186.67,
+                    "material_takeoff": [
+                        {
+                            "item": "Ready Mix Concrete",
+                            "unit": "CY",
+                            "quantity": 6
+                        },
+                        {
+                            "item": "Footing System Form Boards (2x4 x 8.0 ft)",
+                            "unit": "EA",
+                            "quantity": 30
+                        },
+                        {
+                            "item": "Compacted Aggregate Base (6.0 in depth)",
+                            "unit": "CY",
+                            "quantity": 2.72
+                        }
+                    ],
+                    "structural_note": "Footing size, reinforcing, stepped elevations, and bearing requirements must match approved structural plans."
+                }
+            ],
+            "custom_items": [],
+            "change_orders": [],
+            "phases": [
+                {
+                    "name": "Preconstruction",
+                    "start_date": "2026-08-10",
+                    "end_date": "2026-08-10",
+                    "status": "Not Started",
+                    "planned_labor_hours": 6.0,
+                    "labor_trade": "Project Manager",
+                    "crew_notes": "",
+                    "equipment_notes": ""
+                },
+                {
+                    "name": "Site Work",
+                    "start_date": "2026-08-11",
+                    "end_date": "2026-08-12",
+                    "status": "Not Started",
+                    "planned_labor_hours": 16.0,
+                    "labor_trade": "Laborer",
+                    "crew_notes": "",
+                    "equipment_notes": ""
+                },
+                {
+                    "name": "Foundation",
+                    "start_date": "2026-08-13",
+                    "end_date": "2026-08-18",
+                    "status": "Not Started",
+                    "planned_labor_hours": 40.0,
+                    "labor_trade": "Concrete Finisher",
+                    "crew_notes": "2 Carpenters and 2 finshers",
+                    "equipment_notes": ""
+                },
+                {
+                    "name": "Framing",
+                    "start_date": "2026-08-19",
+                    "end_date": "2026-08-28",
+                    "status": "Not Started",
+                    "planned_labor_hours": 72.0,
+                    "labor_trade": "Finshers",
+                    "crew_notes": "",
+                    "equipment_notes": ""
+                },
+                {
+                    "name": "Dry-In",
+                    "start_date": "2026-08-28",
+                    "end_date": "2026-09-03",
+                    "status": "Not Started",
+                    "planned_labor_hours": 32.0,
+                    "labor_trade": "Roofer",
+                    "crew_notes": "",
+                    "equipment_notes": ""
+                },
+                {
+                    "name": "Finishes",
+                    "start_date": "2026-09-02",
+                    "end_date": "2026-09-08",
+                    "status": "Not Started",
+                    "planned_labor_hours": 48.0,
+                    "labor_trade": "Finish Carpenters",
+                    "crew_notes": "",
+                    "equipment_notes": ""
+                },
+                {
+                    "name": "Closeout",
+                    "start_date": "2026-09-11",
+                    "end_date": "2026-09-11",
+                    "status": "Not Started",
+                    "planned_labor_hours": 8.0,
+                    "labor_trade": "Laborer",
+                    "crew_notes": "",
+                    "equipment_notes": ""
+                }
+            ],
+            "schedule_items": [
+                {
+                    "title": "Permit and material verification",
+                    "start_date": "2026-08-10",
+                    "due_date": "2026-08-10",
+                    "phase": "Preconstruction",
+                    "item_type": "Task",
+                    "status": "Upcoming",
+                    "notes": "",
+                    "planned_labor_hours": 6.0,
+                    "labor_trade": "",
+                    "equipment_notes": ""
+                },
+                {
+                    "title": "Clear and grade workshop pad",
+                    "start_date": "2026-08-11",
+                    "due_date": "2026-08-12",
+                    "phase": "Site Work",
+                    "item_type": "Task",
+                    "status": "Upcoming",
+                    "notes": "",
+                    "planned_labor_hours": 16.0,
+                    "labor_trade": "",
+                    "equipment_notes": ""
+                },
+                {
+                    "title": "Frame walls, openings, and roof structure",
+                    "start_date": "2026-08-19",
+                    "due_date": "2026-08-27",
+                    "phase": "Framing",
+                    "item_type": "Task",
+                    "status": "Upcoming",
+                    "notes": "",
+                    "planned_labor_hours": 72.0,
+                    "labor_trade": "Carpenter",
+                    "equipment_notes": ""
+                },
+                {
+                    "title": "Sheathing, underlayment, shingles",
+                    "start_date": "2026-08-09",
+                    "due_date": "2026-08-09",
+                    "phase": "Preconstruction",
+                    "item_type": "Task",
+                    "status": "Upcoming",
+                    "notes": "",
+                    "planned_labor_hours": 0.0,
+                    "labor_trade": "",
+                    "equipment_notes": ""
+                },
+                {
+                    "title": "Insulation, drywall, and paint",
+                    "start_date": "2026-09-02",
+                    "due_date": "2026-09-08",
+                    "phase": "Preconstruction",
+                    "item_type": "Task",
+                    "status": "Upcoming",
+                    "notes": "",
+                    "planned_labor_hours": 48.0,
+                    "labor_trade": "Finish Carpenter",
+                    "equipment_notes": ""
+                },
+                {
+                    "title": "Final cleanup and customer walkthrough",
+                    "start_date": "2026-09-11",
+                    "due_date": "2026-09-11",
+                    "phase": "Closeout",
+                    "item_type": "Task",
+                    "status": "Upcoming",
+                    "notes": "",
+                    "planned_labor_hours": 8.0,
+                    "labor_trade": "laborer",
+                    "equipment_notes": ""
+                }
+            ],
+            "equipment": [
+                {
+                    "name": "skid steer",
+                    "source": "rental",
+                    "phase": "Site Work",
+                    "start_date": "2026-08-09",
+                    "end_date": "2026-08-09",
+                    "status": "Planned",
+                    "daily_cost": 0.0,
+                    "notes": ""
+                },
+                {
+                    "name": "plate compactor",
+                    "source": "rental",
+                    "phase": "Foundation",
+                    "start_date": "2026-08-09",
+                    "end_date": "2026-09-11",
+                    "status": "Planned",
+                    "daily_cost": 0.0,
+                    "notes": ""
+                }
+            ],
+            "daily_logs": [
+                {
+                    "date": "2026-08-09",
+                    "crew_summary": "Project Manager",
+                    "weather": "Cloudy, 78F, dry",
+                    "work_completed": "walked the future site with the owner",
+                    "materials_delivered": "",
+                    "issues_delays": "",
+                    "safety_notes": "",
+                    "tomorrow_plan": "",
+                    "photos": []
+                }
+            ]
+        }
+    },
+    "active_project": "apples",
+    "deleted_projects": []
+}

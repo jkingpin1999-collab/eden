@@ -1,0 +1,226 @@
+{
+    "labor_rate_per_hour": 50.0,
+    "labor_rates": {
+        "carpenter": {
+            "trade": "carpenter",
+            "hourly_rate": 20.0
+        },
+        "finisher": {
+            "trade": "finisher",
+            "hourly_rate": 24.0
+        }
+    },
+    "suppliers": {
+        "not recorded": {
+            "name": "Not recorded"
+        },
+        "home depot online reference (demo)": {
+            "name": "Home Depot online reference (demo)"
+        }
+    },
+    "material_prices": {
+        "ready mix concrete|CY": {
+            "item": "Ready Mix Concrete",
+            "unit": "CY",
+            "unit_cost": 175.0
+        }
+    },
+    "regions": {
+        "company default": {
+            "name": "Company Default",
+            "material_prices": {
+                "ready mix concrete|CY|not recorded": {
+                    "item": "Ready Mix Concrete",
+                    "unit": "CY",
+                    "unit_cost": 175.0,
+                    "supplier": "Not recorded",
+                    "price_date": "Not recorded",
+                    "history": []
+                }
+            }
+        },
+        "bay area": {
+            "name": "Bay Area",
+            "material_prices": {
+                "ready mix concrete|CY|not recorded": {
+                    "item": "Ready Mix Concrete",
+                    "unit": "CY",
+                    "unit_cost": 240.0,
+                    "supplier": "Not recorded",
+                    "price_date": "Not recorded",
+                    "history": []
+                }
+            }
+        },
+        "dallas-fort worth": {
+            "name": "Dallas-Fort Worth",
+            "material_prices": {}
+        },
+        "houston": {
+            "name": "Houston",
+            "material_prices": {}
+        },
+        "phoenix": {
+            "name": "Phoenix",
+            "material_prices": {}
+        },
+        "central valley": {
+            "name": "Central Valley",
+            "material_prices": {}
+        },
+        "los angeles / orange county": {
+            "name": "Los Angeles / Orange County",
+            "material_prices": {}
+        },
+        "seattle": {
+            "name": "Seattle",
+            "material_prices": {}
+        },
+        "atlanta metro": {
+            "name": "Atlanta Metro",
+            "material_prices": {
+                "ready mix concrete|CY|not recorded": {
+                    "item": "Ready Mix Concrete",
+                    "unit": "CY",
+                    "unit_cost": 175.0,
+                    "supplier": "Not recorded",
+                    "price_date": "Not recorded",
+                    "history": []
+                },
+                "6 mil vapor barrier|ROLLS|home depot online reference (demo)": {
+                    "item": "6 mil Vapor Barrier",
+                    "unit": "ROLLS",
+                    "unit_cost": 139.0,
+                    "supplier": "Home Depot online reference (demo)",
+                    "price_date": "2026-08-08",
+                    "history": []
+                },
+                "footing form boards (2x4 x 8.0 ft)|EA|home depot online reference (demo)": {
+                    "item": "Footing Form Boards (2x4 x 8.0 ft)",
+                    "unit": "EA",
+                    "unit_cost": 4.25,
+                    "supplier": "Home Depot online reference (demo)",
+                    "price_date": "2026-08-08",
+                    "history": []
+                },
+                "ready mix concrete|CY|home depot online reference (demo)": {
+                    "item": "Ready Mix Concrete",
+                    "unit": "CY",
+                    "unit_cost": 150.0,
+                    "supplier": "Home Depot online reference (demo)",
+                    "price_date": "2026-08-08",
+                    "history": []
+                },
+                "5x10 wire mesh sheets|SHEETS|home depot online reference (demo)": {
+                    "item": "5x10 Wire Mesh Sheets",
+                    "unit": "SHEETS",
+                    "unit_cost": 38.0,
+                    "supplier": "Home Depot online reference (demo)",
+                    "price_date": "2026-08-09",
+                    "history": []
+                },
+                "compacted aggregate base (6.0 in depth)|CY|home depot online reference (demo)": {
+                    "item": "Compacted Aggregate Base (6.0 in depth)",
+                    "unit": "CY",
+                    "unit_cost": 125.0,
+                    "supplier": "Home Depot online reference (demo)",
+                    "price_date": "2026-08-09",
+                    "history": []
+                },
+                "2x4 x 16.0 ft plates|EA|home depot online reference (demo)": {
+                    "item": "2x4 x 16.0 ft Plates",
+                    "unit": "EA",
+                    "unit_cost": 12.0,
+                    "supplier": "Home Depot online reference (demo)",
+                    "price_date": "2026-08-09",
+                    "history": []
+                },
+                "2x4 x 16.0 ft top and bottom plates|EA|home depot online reference (demo)": {
+                    "item": "2x4 x 16.0 ft Top and Bottom Plates",
+                    "unit": "EA",
+                    "unit_cost": 12.0,
+                    "supplier": "Home Depot online reference (demo)",
+                    "price_date": "2026-08-09",
+                    "history": []
+                },
+                "2x4 x 16.0 ft window sills|EA|home depot online reference (demo)": {
+                    "item": "2x4 x 16.0 ft Window Sills",
+                    "unit": "EA",
+                    "unit_cost": 12.0,
+                    "supplier": "Home Depot online reference (demo)",
+                    "price_date": "2026-08-09",
+                    "history": []
+                },
+                "2x4 x 8 ft studs|EA|home depot online reference (demo)": {
+                    "item": "2x4 x 8 ft Studs",
+                    "unit": "EA",
+                    "unit_cost": 4.5,
+                    "supplier": "Home Depot online reference (demo)",
+                    "price_date": "2026-08-09",
+                    "history": []
+                },
+                "2x4 x 8 ft wall, king, and jack studs|EA|home depot online reference (demo)": {
+                    "item": "2x4 x 8 ft Wall, King, and Jack Studs",
+                    "unit": "EA",
+                    "unit_cost": 4.5,
+                    "supplier": "Home Depot online reference (demo)",
+                    "price_date": "2026-08-09",
+                    "history": []
+                },
+                "4x8 1/2 in drywall sheets|SHEETS|home depot online reference (demo)": {
+                    "item": "4x8 1/2 in Drywall Sheets",
+                    "unit": "SHEETS",
+                    "unit_cost": 16.0,
+                    "supplier": "Home Depot online reference (demo)",
+                    "price_date": "2026-08-09",
+                    "history": []
+                },
+                "4x8 7/16 osb roof sheathing|SHEETS|home depot online reference (demo)": {
+                    "item": "4x8 7/16 OSB Roof Sheathing",
+                    "unit": "SHEETS",
+                    "unit_cost": 18.0,
+                    "supplier": "Home Depot online reference (demo)",
+                    "price_date": "2026-08-09",
+                    "history": []
+                },
+                "asphalt shingles (3 bundles per square)|BUNDLES|home depot online reference (demo)": {
+                    "item": "Asphalt Shingles (3 bundles per square)",
+                    "unit": "BUNDLES",
+                    "unit_cost": 42.0,
+                    "supplier": "Home Depot online reference (demo)",
+                    "price_date": "2026-08-09",
+                    "history": []
+                },
+                "footing system form boards (2x4 x 8.0 ft)|EA|home depot online reference (demo)": {
+                    "item": "Footing System Form Boards (2x4 x 8.0 ft)",
+                    "unit": "EA",
+                    "unit_cost": 4.5,
+                    "supplier": "Home Depot online reference (demo)",
+                    "price_date": "2026-08-09",
+                    "history": []
+                },
+                "latex interior wall paint|GALLONS|home depot online reference (demo)": {
+                    "item": "Latex Interior Wall Paint",
+                    "unit": "GALLONS",
+                    "unit_cost": 42.0,
+                    "supplier": "Home Depot online reference (demo)",
+                    "price_date": "2026-08-09",
+                    "history": []
+                },
+                "r13 batt insulation|BUNDLES|home depot online reference (demo)": {
+                    "item": "R13 Batt Insulation",
+                    "unit": "BUNDLES",
+                    "unit_cost": 68.0,
+                    "supplier": "Home Depot online reference (demo)",
+                    "price_date": "2026-08-09",
+                    "history": []
+                }
+            }
+        },
+        "atlanta": {
+            "name": "atlanta",
+            "material_prices": {}
+        }
+    },
+    "default_region": "atlanta metro"
+}

@@ -1,0 +1,18 @@
+{
+    "my": "job is construction manager",
+    "name": "joseph",
+    "last action": "estimate",
+    "last category": "concrete",
+    "last_type": "beam",
+    "last type": "patio",
+    "concrete_last_package_choice": "1",
+    "eden_welcome_guide_shown": true,
+    "concrete_patio_last_custom_options": {
+        "reinforced": true,
+        "wire_mesh": false,
+        "vapor_barrier": true,
+        "gravel_base": true,
+        "control_joints": true,
+        "forms": true
+    }
+}
