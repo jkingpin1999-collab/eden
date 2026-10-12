@@ -9,7 +9,7 @@ window.EDEN_BILLING_FUNCTION_BASE =
   `${window.EDEN_SUPABASE_URL}/functions/v1`;
 
 // This is the deployed Eden application, not a local-development address.
-window.EDEN_APP_URL = 'https://znrmfh8pgum4zdufs6hexz.streamlit.app/';
+window.EDEN_APP_URL = 'https://edenconintel.streamlit.app/';
 
 // Always enter through Eden's account-switching login page. This prevents a
 // website user from being dropped into a different Eden account whose app
